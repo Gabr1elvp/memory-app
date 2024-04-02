@@ -3,17 +3,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/mi_Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/mi_Refresh"
         android:icon="@drawable/ic_refresh"
         android:title="Refresh"
+        android:visible="true"
         app:showAsAction="always" />
     <item
         android:id="@+id/mi_new_size"
+        android:enabled="false"
         android:title="Choose new size"
+        android:visible="false"
         app:showAsAction="never" />
     <item
         android:id="@+id/mi_custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="Create custom game" />
+        android:title="Create custom game"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mi_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Download custom game"
+        android:visible="false"
+        app:showAsAction="never" />
 </menu>

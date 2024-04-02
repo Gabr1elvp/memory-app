@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background_menu"
+        android:visibility="visible">
+
+
+        <SeekBar
+            android:id="@+id/sbSong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:max="100"
+            android:progress="50"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvVolume"
+            app:layout_constraintTop_toBottomOf="@+id/swSong"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/options_song"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Volume"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="@+id/tvSong"
+            app:layout_constraintTop_toBottomOf="@+id/tvSong" />
+
+        <Switch
+            android:id="@+id/swSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSong"
+            app:layout_constraintStart_toEndOf="@+id/tvSong"
+            app:layout_constraintTop_toTopOf="@+id/tvSong" />
+
+
+        <ImageButton
+            android:id="@+id/imLayout1"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/card_layout_1"
+            app:layout_constraintStart_toEndOf="@+id/rgLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tvLayout"
+            tools:srcCompat="@drawable/card_layout_1" />
+
+        <TextView
+            android:id="@+id/tvLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/options_layout"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintStart_toStartOf="@+id/tvLanguage"
+            app:layout_constraintTop_toBottomOf="@+id/tvLanguage" />
+
+        <RadioGroup
+            android:id="@+id/rgLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imLayout1">
+
+            <RadioButton
+                android:id="@+id/rbLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/rbLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="110dp" />
+
+            <RadioButton
+                android:id="@+id/rbLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="100dp" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/imLayout2"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/card_layout_2"
+            app:layout_constraintStart_toEndOf="@+id/rgLayout"
+            app:layout_constraintTop_toBottomOf="@+id/imLayout1"
+            tools:src="@drawable/card_layout_2"
+            tools:srcCompat="@drawable/card_layout_2" />
+
+        <ImageButton
+            android:id="@+id/imLayout3"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/card_layout_3"
+            app:layout_constraintStart_toEndOf="@+id/rgLayout"
+            app:layout_constraintTop_toBottomOf="@+id/imLayout2"
+            tools:src="@drawable/card_layout_3"
+            tools:srcCompat="@drawable/card_layout_3" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imLayout3" />
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/options_language"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="@+id/tvVolume"
+            app:layout_constraintTop_toBottomOf="@+id/tvVolume" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLanguage"
+            app:layout_constraintStart_toEndOf="@+id/tvLanguage"
+            app:layout_constraintTop_toTopOf="@+id/tvLanguage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

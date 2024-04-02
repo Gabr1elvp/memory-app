@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background_menu">
+
+        <Button
+            android:id="@+id/btnNewGame"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/color_buttons_menu"
+            android:text="@string/menu_new_game"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btnCustomGame"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/color_buttons_menu"
+            android:text="@string/menu_create_game"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="@+id/btnNewGame"
+            app:layout_constraintStart_toStartOf="@+id/btnNewGame"
+            app:layout_constraintTop_toBottomOf="@+id/btnNewGame" />
+
+        <Button
+            android:id="@+id/btnOptions"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/color_buttons_menu"
+            android:text="@string/menu_options"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="@+id/btnDownloadGame"
+            app:layout_constraintStart_toStartOf="@+id/btnDownloadGame"
+            app:layout_constraintTop_toBottomOf="@+id/btnDownloadGame" />
+
+        <Button
+            android:id="@+id/btnAbout"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/color_buttons_menu"
+            android:text="@string/menu_about"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="@+id/btnOptions"
+            app:layout_constraintStart_toStartOf="@+id/btnOptions"
+            app:layout_constraintTop_toBottomOf="@+id/btnOptions" />
+
+        <Button
+            android:id="@+id/btnDownloadGame"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/color_buttons_menu"
+            android:includeFontPadding="false"
+            android:text="@string/menu_download_game"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="@+id/btnCustomGame"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="@+id/btnCustomGame"
+            app:layout_constraintTop_toBottomOf="@+id/btnCustomGame" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="serif"
+            android:text="@string/menu_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="45sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

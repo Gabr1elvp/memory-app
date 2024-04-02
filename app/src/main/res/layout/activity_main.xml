@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/clRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="0dp"
-    android:overScrollMode="never"
     tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_margin="0dp"
+    android:overScrollMode="never">
+
 
     <LinearLayout
         android:id="@+id/llGameInfo"
@@ -33,7 +42,7 @@
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="Moves: 0"
+                android:text="@string/number_moves"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="normal" />
         </androidx.cardview.widget.CardView>
@@ -52,7 +61,7 @@
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="Pairs: 0 / 4"
+                android:text="@string/number_pairs_easy"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="normal" />
         </androidx.cardview.widget.CardView>
@@ -72,3 +81,4 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

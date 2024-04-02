@@ -3,7 +3,7 @@
     <style name="Base.Theme.MemoryGame" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorSecondaryVariant">#6CB9F0</item>
+        <item name="colorSecondaryVariant">#4191FA</item>
     </style>
 
     <style name="Theme.MemoryGame" parent="Base.Theme.MemoryGame" />
